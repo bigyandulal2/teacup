@@ -1,0 +1,97 @@
+/*  */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  background: url(https://images.unsplash.com/photo-1472712739516-7ad2b786e1f7?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.grand {
+  position: relative;
+}
+.parent {
+  background-color: #0f1621;
+  opacity: 0.8;
+  width: 408px;
+  height: 413px;
+  border-top-left-radius: 10px;
+  border-left-color: #c58e4c;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 49%;
+  position: relative;
+}
+.child-top {
+  position: absolute;
+  top: -39px;
+  width: 100%;
+  height: 100px;
+  background-color: #f5f5dc;
+  /* border: 2px solid black; */
+  /* border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%; */
+  border-radius: 50%;
+}
+.child-top::after {
+  content: "";
+  height: 80px;
+  /* animation: floating 2s ease-in-out infinite; */
+  background-color: #c58e4c;
+  width: 100%;
+  border-radius: 45%;
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  z-index: 1;
+}
+
+.child-right {
+  position: absolute;
+  right: -115px;
+  width: 100px;
+  height: 100px;
+  /* background-color: rgb(30, 165, 214); */
+  top: 78px;
+  border-right: 16px solid #f5f5dc;
+  border-top: 20px solid #f5f5dc;
+  border-bottom: 20px solid #f5f5dc;
+  border-radius: 50%;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-right-color: none;
+}
+.child-content {
+  position: absolute;
+  top: 50%;
+  /* left: 28%; */
+  /* border: 1px solid red; */
+  /* background-color: pink; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 50%; */
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  opacity: 0.8;
+}
+h1 {
+  background-color: #0a192f;
+  cursor: pointer;
+  padding: 10px;
+}
+a:hover {
+  transform: scale(0.8);
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+a:visited {
+  color: blue;
+}
+h1 > strong {
+  color: red;
+}
